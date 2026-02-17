@@ -1,8 +1,9 @@
 {
-  "trend": 2,
-  "volume": 1,
-  "flow": 1,
-  "catalyst": 1,
-  "risk": 0,
-  "note": "示例：技術與籌碼偏正向，無重大負面事件"
+  "news_sentiment": 2,
+  "global_macro": 1,
+  "geopolitics": -1,
+  "trend_confirm": 1,
+  "flow_confirm": 1,
+  "event_risk": -1,
+  "note": "示例：新聞偏正向，但地緣風險仍在"
 }
