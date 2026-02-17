@@ -50,7 +50,13 @@ If news/global fields are missing, force confidence to 低.
 
 ## Resources
 - Method: `references/scorecard.md`
-- Script: `scripts/forecast_score.py`
+- Score Script: `scripts/forecast_score.py`
+- Auto News Pipeline: `scripts/news_0050_pipeline.py`
 - Sample input: `scripts/sample_input.json`
+
+## End-to-End Mode (A+B+C)
+- A 自動抓新聞：執行 `python scripts/news_0050_pipeline.py`
+- B 輸出 0050 漲跌機率：執行 `python scripts/forecast_score.py scripts/realtime_0050_auto.json`
+- C 固定時間自動跑：用 OpenClaw cron 每天觸發一次（例如 18:10 Asia/Taipei）
 
 Use script output as baseline, then refine with freshest news context.

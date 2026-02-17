@@ -1,0 +1,31 @@
+{
+  "news_sentiment": 0.0,
+  "global_macro": 1.0,
+  "geopolitics": 0.0,
+  "trend_confirm": 0,
+  "flow_confirm": 0,
+  "event_risk": -1,
+  "sources": {
+    "tw_0050": [
+      "【不配息的0050ETF 1】009816與0050大PK！專家曝「隱藏優勢」千萬大戶年省10萬稅金 - Yahoo股市",
+      "MSCI加持！台股「護國神山群」迎金馬行情 0050擁主場優勢一起飛 - news.cnyes.com",
+      "0050規模破兆元、年輕族群湧入！網反示警：人太多該提高警覺 - 聯合新聞網",
+      "「未來的台灣50」00991A元月績效贏0050真有料？內行人點背後的關鍵重點 - 商周財富網",
+      "高股息、市值型大PK！他苦惱「小孩長期存股」怎麼配置 網一面倒：這檔賺到你會怕 - FTNN 新聞網"
+    ],
+    "us_macro": [
+      "U.S. Treasury Yields Fall as Market Keeps Anticipating Fed Rate Cuts - Barron's",
+      "Long US Treasury yields to rise later in year; supply to postpone Fed balance sheet reduction - Reuters",
+      "How Changing Interest Rates Affect Bonds - U.S. Bank",
+      "Traders Boost Bets to 50% for Fed to Cut Three Times This Year - Bloomberg.com",
+      "Treasury yields slip after slightly lighter CPI reading - CNBC"
+    ],
+    "geo": [
+      "FO° Exclusive: Tensions Over Taiwan Push China and Japan Closer to Conflict - Fair Observer",
+      "China Is the Real Threat, Taiwan Says in Rebuke to Munich Speech - vocal.media",
+      "Taiwan Searches for Economic Allies in a Divided World - Geopolitical Monitor",
+      "Taiwan Rejects U.S. Demand for 40% Chip Supply Chain Shift - The Tech Buzz",
+      "No place to hide from any China-Taiwan conflict, investors say - Reuters"
+    ]
+  }
+}
