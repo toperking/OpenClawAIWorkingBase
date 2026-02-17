@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a0019"/>
+      <stop offset="100%" stop-color="#b3002d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffd76a" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffd76a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- decorative border -->
+  <rect x="34" y="34" width="1532" height="832" fill="none" stroke="#f6c453" stroke-width="6" rx="22"/>
+  <rect x="60" y="60" width="1480" height="780" fill="none" stroke="#f6c453" stroke-width="2" rx="16" opacity="0.8"/>
+
+  <!-- lanterns -->
+  <g transform="translate(260,90)">
+    <line x1="0" y1="0" x2="0" y2="170" stroke="#f6c453" stroke-width="4"/>
+    <ellipse cx="0" cy="220" rx="70" ry="86" fill="#d4082f" stroke="#f6c453" stroke-width="6" filter="url(#shadow)"/>
+    <line x1="-56" y1="178" x2="56" y2="178" stroke="#f6c453" stroke-width="4" opacity="0.9"/>
+    <line x1="-62" y1="206" x2="62" y2="206" stroke="#f6c453" stroke-width="3" opacity="0.7"/>
+    <line x1="-56" y1="236" x2="56" y2="236" stroke="#f6c453" stroke-width="4" opacity="0.9"/>
+    <line x1="0" y1="306" x2="0" y2="340" stroke="#f6c453" stroke-width="4"/>
+    <circle cx="0" cy="348" r="7" fill="#f6c453"/>
+  </g>
+
+  <g transform="translate(1340,120)">
+    <line x1="0" y1="0" x2="0" y2="145" stroke="#f6c453" stroke-width="4"/>
+    <ellipse cx="0" cy="190" rx="58" ry="72" fill="#d4082f" stroke="#f6c453" stroke-width="6" filter="url(#shadow)"/>
+    <line x1="-46" y1="154" x2="46" y2="154" stroke="#f6c453" stroke-width="4" opacity="0.9"/>
+    <line x1="-50" y1="182" x2="50" y2="182" stroke="#f6c453" stroke-width="3" opacity="0.7"/>
+    <line x1="-46" y1="208" x2="46" y2="208" stroke="#f6c453" stroke-width="4" opacity="0.9"/>
+    <line x1="0" y1="262" x2="0" y2="295" stroke="#f6c453" stroke-width="4"/>
+    <circle cx="0" cy="302" r="6" fill="#f6c453"/>
+  </g>
+
+  <!-- main text -->
+  <text x="800" y="360" text-anchor="middle" fill="#ffd76a" font-size="124" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC',sans-serif" font-weight="700" filter="url(#shadow)">新年快樂</text>
+  <text x="800" y="470" text-anchor="middle" fill="#ffe7a6" font-size="58" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC',sans-serif" letter-spacing="4">恭喜發財．蛇年大吉</text>
+
+  <!-- center seal -->
+  <g transform="translate(800,620)">
+    <rect x="-120" y="-120" width="240" height="240" rx="16" fill="#b3002d" stroke="#f6c453" stroke-width="7" transform="rotate(45)"/>
+    <text x="0" y="22" text-anchor="middle" fill="#ffd76a" font-size="80" font-family="'KaiTi','DFKai-SB','STKaiti',serif" font-weight="700">福</text>
+  </g>
+
+  <text x="800" y="815" text-anchor="middle" fill="#f8d98b" opacity="0.9" font-size="34" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC',sans-serif">2026 Lunar New Year</text>
+</svg>
