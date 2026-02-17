@@ -10,12 +10,12 @@ Generate short-horizon direction views (偏多/偏空/震盪) with **news-first*
 
 ## Workflow
 1. Define horizon: next session / 1-3 days / 1 week.
-2. Collect news & global context first:
-   - US market close tone (risk-on/risk-off)
-   - Fed rate path expectations / USD / US yields
-   - Geopolitics (war, sanctions, cross-strait, energy shocks)
-   - Sector-specific global headlines (AI, semis, EV, commodities)
-3. Convert narrative into score via `references/scorecard.md` or `scripts/forecast_score.py`.
+2. Read international situation with browser/web first (required):
+   - US market tone and Treasury/Fed headlines
+   - Macro surprises (inflation, jobs, PMI, policy)
+   - Geopolitics (war, sanctions, Taiwan Strait, energy routes)
+   - Sector headlines tied to Taiwan large caps
+3. Convert news narrative into score via `references/scorecard.md` or `scripts/forecast_score.py`.
 4. Use technical/flow data as confirmation layer (not primary driver).
 5. Output direction + probability + confidence + invalidation triggers.
 
@@ -26,6 +26,14 @@ Generate short-horizon direction views (偏多/偏空/震盪) with **news-first*
 - `trend_confirm` (-2~+2): price trend confirmation.
 - `flow_confirm` (-2~+2): institutional/foreign flow confirmation.
 - `event_risk` (-2~0): upcoming event downside risk (earnings, CPI/FOMC, policy).
+
+## Browser Source Rule (new)
+When user asks for 即時版, fetch at least 2-3 fresh sources via browser/web before scoring:
+- Taiwan/ETF-specific: 0050 / Taiwan 50 ETF related news
+- US macro: Fed, Treasury yields, risk-on/risk-off headlines
+- Geopolitics: Taiwan or Asia risk headlines
+
+If no fresh web sources are available, label result as 低信心 and state that it is an estimate.
 
 If news/global fields are missing, force confidence to 低.
 

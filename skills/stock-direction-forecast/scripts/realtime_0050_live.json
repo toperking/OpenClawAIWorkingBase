@@ -1,0 +1,9 @@
+{
+  "news_sentiment": 0.5,
+  "global_macro": 0.0,
+  "geopolitics": -1.0,
+  "trend_confirm": 0.0,
+  "flow_confirm": 0.0,
+  "event_risk": -1.0,
+  "note": "realtime-like from latest headlines"
+}
