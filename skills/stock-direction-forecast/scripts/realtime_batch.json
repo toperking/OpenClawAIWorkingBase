@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-02-17T23:53",
+  "results": [
+    {
+      "symbol": "0050",
+      "alias": "元大台灣50",
+      "score": 0.33,
+      "direction": "震盪",
+      "up_probability": 51,
+      "down_probability": 49,
+      "confidence": "中",
+      "inputs": {
+        "news_sentiment": 0.0,
+        "global_macro": 1.3333333333333333,
+        "geopolitics": 0.0,
+        "trend_confirm": 0,
+        "flow_confirm": 0,
+        "event_risk": -1
+      },
+      "sources": {
+        "symbol_news": [
+          "【即時新聞】0050規模衝破兆元大關，存股族棄守高股息轉進「這 1 檔」？ - CMoney投資網誌",
+          "MSCI加持！台股「護國神山群」迎金馬行情 0050擁主場優勢一起飛 - news.cnyes.com",
+          "0050規模破兆元、年輕族群湧入！網反示警：人太多該提高警覺 - 聯合新聞網"
+        ],
+        "us_macro": [
+          "Long US Treasury yields to rise later in year; supply to postpone Fed balance sheet reduction - Reuters",
+          "How Changing Interest Rates Affect Bonds - U.S. Bank",
+          "Traders Boost Bets to 50% for Fed to Cut Three Times This Year - Bloomberg"
+        ],
+        "geopolitics": [
+          "FO° Exclusive: Tensions Over Taiwan Push China and Japan Closer to Conflict - Fair Observer",
+          "China Is the Real Threat, Taiwan Says in Rebuke to Munich Speech - vocal.media",
+          "Taiwan Searches for Economic Allies in a Divided World - Geopolitical Monitor"
+        ]
+      }
+    },
+    {
+      "symbol": "2330",
+      "alias": "台積電",
+      "score": 0.33,
+      "direction": "震盪",
+      "up_probability": 51,
+      "down_probability": 49,
+      "confidence": "中",
+      "inputs": {
+        "news_sentiment": 0.0,
+        "global_macro": 1.3333333333333333,
+        "geopolitics": 0.0,
+        "trend_confirm": 0,
+        "flow_confirm": 0,
+        "event_risk": -1
+      },
+      "sources": {
+        "symbol_news": [
+          "【台股盤前0211】(今)台股封關前，加權指數、台積電再創新高，但櫃買卻走弱?! 『營收創高』聚焦: 台積電、南茂、建榮 - sinotrade.com.tw",
+          "台股金蛇擺尾，蛇年創漲點市值等 13 項新高紀錄 - 理財寶",
+          "不要只看台積電！前操盤手38歲財富自由，專買「類台積股」績效翻倍：散戶與高手分別在這裡| 個人理財| 理財 - 經濟日報"
+        ],
+        "us_macro": [
+          "Long US Treasury yields to rise later in year; supply to postpone Fed balance sheet reduction - Reuters",
+          "How Changing Interest Rates Affect Bonds - U.S. Bank",
+          "Traders Boost Bets to 50% for Fed to Cut Three Times This Year - Bloomberg"
+        ],
+        "geopolitics": [
+          "FO° Exclusive: Tensions Over Taiwan Push China and Japan Closer to Conflict - Fair Observer",
+          "China Is the Real Threat, Taiwan Says in Rebuke to Munich Speech - vocal.media",
+          "Taiwan Searches for Economic Allies in a Divided World - Geopolitical Monitor"
+        ]
+      }
+    }
+  ]
+}

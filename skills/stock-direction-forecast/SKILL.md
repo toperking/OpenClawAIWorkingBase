@@ -1,6 +1,6 @@
 ---
 name: stock-direction-forecast
-description: Produce short-term stock up/down direction forecasts primarily based on current news flow and international macro/geopolitical conditions, then refine with price/volume/flow confirmation. Output transparent probabilities, confidence labels, and scenario triggers. Use when the user asks for 預判漲跌、短線方向、明日偏多偏空判斷、或想依新聞與國際局勢快速量化看法.
+description: Produce short-term stock up/down direction forecasts primarily based on current news flow and international macro/geopolitical conditions, then refine with price/volume/flow confirmation. Support single or multiple Taiwan symbols (e.g., 0050, 2330), with optional daily auto-run and Telegram-ready report output. Use when the user asks for 預判漲跌、短線方向、明日偏多偏空判斷、或想依新聞與國際局勢快速量化看法.
 ---
 
 # Stock Direction Forecast
@@ -50,13 +50,18 @@ If news/global fields are missing, force confidence to 低.
 
 ## Resources
 - Method: `references/scorecard.md`
-- Score Script: `scripts/forecast_score.py`
-- Auto News Pipeline: `scripts/news_0050_pipeline.py`
-- Sample input: `scripts/sample_input.json`
+- Single-input Score Script: `scripts/forecast_score.py`
+- Multi-symbol News Pipeline: `scripts/news_stock_pipeline.py`
+- Report Formatter: `scripts/format_report.py`
+- Watchlist sample: `scripts/watchlist.sample.json`
 
 ## End-to-End Mode (A+B+C)
-- A 自動抓新聞：執行 `python scripts/news_0050_pipeline.py`
-- B 輸出 0050 漲跌機率：執行 `python scripts/forecast_score.py scripts/realtime_0050_auto.json`
-- C 固定時間自動跑：用 OpenClaw cron 每天觸發一次（例如 18:10 Asia/Taipei）
+- A 自動抓新聞（多標的）：
+  - `python scripts/news_stock_pipeline.py --watchlist scripts/watchlist.sample.json --out scripts/realtime_batch.json`
+- B 自動輸出漲跌機率（0050/2330...）：
+  - `python scripts/format_report.py scripts/realtime_batch.json`
+- C 固定時間自動跑：
+  - 用 OpenClaw cron 每天觸發一次（例如 18:10 Asia/Taipei）
+  - 由排程觸發 agent turn，執行 A+B，最後將摘要推送 Telegram
 
 Use script output as baseline, then refine with freshest news context.
